@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+
+
+  <link crossorigin="anonymous" href="Try-Django-1.8_src_templates_registration%20at%20master%20%C2%B7%20codingforentrepreneurs_Try-Django-1.8_files/frameworks-d7b19415c108234b91acac0d0c02091c860993c13687a757e.css" integrity="sha256-17GUFcEII0uRrKwNDAIJHIYJk8E2h6dX7jRcwezTqdE=" media="all" rel="stylesheet">
+  <link crossorigin="anonymous" href="Try-Django-1.8_src_templates_registration%20at%20master%20%C2%B7%20codingforentrepreneurs_Try-Django-1.8_files/github-d3d79f67a533758106eb43cd943edc6cc25eb8b60a18efdb65d7c.css" integrity="sha256-09efZ6UzdYEG60PNlD7cbMJeuLYKGO/bZdfMsWRq9XY=" media="all" rel="stylesheet">
+  
+  
+  
+  
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>Try-Django-1.8/src/templates/registration at master · codingforentrepreneurs/Try-Django-1.8</title>
+  <link rel="search" type="application/opensearchdescription+xml" href="https://github.com/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    
+    <meta content="https://avatars1.githubusercontent.com/u/8030945?v=3&amp;s=400" property="og:image"><meta content="GitHub" property="og:site_name"><meta content="object" property="og:type"><meta content="codingforentrepreneurs/Try-Django-1.8" property="og:title"><meta content="https://github.com/codingforentrepreneurs/Try-Django-1.8" property="og:url"><meta content="Try-Django-1.8 - Try Django 1.8 is an introduction to Django version 1.8. This series covers a variety of Django basics as well as Django 1.8 specific material" property="og:description">
+
+  <link rel="assets" href="https://assets-cdn.github.com/">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MTY1Mjc5OTY4OjA2MDUxODhhY2ZmMWU3NWFkYTAzN2FhOWRlNDk1YWY4MzNlN2UzYzliNDliZWY0MzA3YzAyYjA5ODJhZTI4ZDg=--720ad7841b23debe71fb483f5a9060e1402b7d2a">
+  <meta name="pjax-timeout" content="1000">
+  <link rel="sudo-modal" href="https://github.com/sessions/sudo_modal">
+  
+  
+
+  
+
+  <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+<meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host"><meta content="github" name="octolytics-app-id"><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url"><meta content="694A:1D636:3ADA7D:61AAC1:5905E392" name="octolytics-dimension-request_id"><meta content="26959806" name="octolytics-actor-id"><meta content="prateekeshwar" name="octolytics-actor-login"><meta content="5f9d1669bc36f0a3abee86f73698e3e952216fa4f144f08b1d3007d271b11216" name="octolytics-actor-hash">
+
+
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged In">
+
+
+  
+
+      <meta name="hostname" content="github.com">
+  <meta name="user-login" content="prateekeshwar">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="NjA0ZjYyNTlhNTQ0ODE3MmM2NDgwZTkzMmY0NThhNWVlZTAzNWFjODlmMDEzMWU3YzM3ZjM1ZGQzZDNmNGNhN3x7InJlbW90ZV9hZGRyZXNzIjoiNDMuMjMxLjU5Ljg4IiwicmVxdWVzdF9pZCI6IjY5NEE6MUQ2MzY6M0FEQTdEOjYxQUFDMTo1OTA1RTM5MiIsInRpbWVzdGFtcCI6MTQ5MzU1ODE2OSwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+
+
+  <meta name="html-safe-nonce" content="e183687dbd138a238b0547ac2724c98cca31926e">
+
+  <meta http-equiv="x-pjax-version" content="52e1159c744ba21d485393372d7ad68c">
+  
+
+    
+  <meta name="description" content="Try-Django-1.8 - Try Django 1.8 is an introduction to Django version 1.8. This series covers a variety of Django basics as well as Django 1.8 specific material">
+  <meta name="go-import" content="github.com/codingforentrepreneurs/Try-Django-1.8 git https://github.com/codingforentrepreneurs/Try-Django-1.8.git">
+
+  <meta content="8030945" name="octolytics-dimension-user_id"><meta content="codingforentrepreneurs" name="octolytics-dimension-user_login"><meta content="35985915" name="octolytics-dimension-repository_id"><meta content="codingforentrepreneurs/Try-Django-1.8" name="octolytics-dimension-repository_nwo"><meta content="true" name="octolytics-dimension-repository_public"><meta content="false" name="octolytics-dimension-repository_is_fork"><meta content="35985915" name="octolytics-dimension-repository_network_root_id"><meta content="codingforentrepreneurs/Try-Django-1.8" name="octolytics-dimension-repository_network_root_nwo">
+        <link href="https://github.com/codingforentrepreneurs/Try-Django-1.8/commits/master.atom" rel="alternate" title="Recent Commits to Try-Django-1.8:master" type="application/atom+xml">
+
+
+    
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient="true"><meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/files/disambiguate" data-pjax-transient="true" name="analytics-location"><meta name="request-id" content="6914:14F25:153456B:230D966:5905E81F" data-pjax-transient="true"><link rel="canonical" href="https://github.com/codingforentrepreneurs/Try-Django-1.8/tree/master/src/templates/registration" data-pjax-transient="true"><link href="https://github.com/codingforentrepreneurs/Try-Django-1.8/commits/master.atom" rel="alternate" title="Recent Commits to Try-Django-1.8:master" type="application/atom+xml" data-pjax-transient="true"></head>
+
+  <body class="logged-in env-production">
+    
+
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress" style="width: 100%;"></div></div>
+
+    
+    
+    
+
+
+
+        
+<div class="header" role="banner">
+  <div class="container clearfix">
+    <a class="header-logo-invertocat" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+  <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+</a>
+
+
+        <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- '"` --><!-- </textarea></xmp> --><form accept-charset="UTF-8" action="/codingforentrepreneurs/Try-Django-1.8/search" class="js-site-search-form" data-scoped-search-url="/codingforentrepreneurs/Try-Django-1.8/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" value="✓" type="hidden"></div>
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+        <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8" class="header-search-scope no-underline">This repository</a>
+      <input class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable" data-hotkey="s" name="q" placeholder="Search" aria-label="Search this repository" data-unscoped-placeholder="Search GitHub" data-scoped-placeholder="Search" autocapitalize="off" type="text">
+        <input class="js-site-search-type-field" name="type" type="hidden">
+    </label>
+</form></div>
+
+
+      <ul class="header-nav float-left" role="navigation">
+        <li class="header-nav-item">
+          <a href="https://github.com/pulls" aria-label="Pull requests you created" class="js-selected-navigation-item header-nav-link" data-ga-click="Header, click, Nav menu - item:pulls context:user" data-hotkey="g p" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls">
+            Pull requests
+</a>        </li>
+        <li class="header-nav-item">
+          <a href="https://github.com/issues" aria-label="Issues you created" class="js-selected-navigation-item header-nav-link" data-ga-click="Header, click, Nav menu - item:issues context:user" data-hotkey="g i" data-selected-links="/issues /issues/assigned /issues/mentioned /issues">
+            Issues
+</a>        </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://gist.github.com/" data-ga-click="Header, go to gist, text:gist">Gist</a>
+          </li>
+      </ul>
+
+    
+<ul class="header-nav user-nav float-right" id="user-links">
+  <li class="header-nav-item">
+    
+
+  </li>
+
+  <li class="header-nav-item dropdown js-menu-container">
+    <a class="header-nav-link tooltipped tooltipped-s js-menu-target" href="https://github.com/new" aria-label="Create new…" data-ga-click="Header, create new, icon:add">
+      <svg aria-hidden="true" class="octicon octicon-plus float-left" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 9H7v5H5V9H0V7h5V2h2v5h5z"></path></svg>
+      <span class="dropdown-caret"></span>
+    </a>
+
+    <div class="dropdown-menu-content js-menu-content">
+      <ul class="dropdown-menu dropdown-menu-sw">
+        
+<a class="dropdown-item" href="https://github.com/new" data-ga-click="Header, create new repository">
+  New repository
+</a>
+
+  <a class="dropdown-item" href="https://github.com/new/import" data-ga-click="Header, import a repository">
+    Import repository
+  </a>
+
+<a class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, create new gist">
+  New gist
+</a>
+
+  <a class="dropdown-item" href="https://github.com/organizations/new" data-ga-click="Header, create new organization">
+    New organization
+  </a>
+
+
+
+  <div class="dropdown-divider"></div>
+  <div class="dropdown-header">
+    <span title="codingforentrepreneurs/Try-Django-1.8">This repository</span>
+  </div>
+    <a class="dropdown-item" href="https://github.com/codingforentrepreneurs/Try-Django-1.8/issues/new" data-ga-click="Header, create new issue">
+      New issue
+    </a>
+
+      </ul>
+    </div>
+  </li>
+
+  <li class="header-nav-item dropdown js-menu-container">
+    <a class="header-nav-link name tooltipped tooltipped-sw js-menu-target" href="https://github.com/prateekeshwar" aria-label="View profile and more" data-ga-click="Header, show menu, icon:avatar">
+      <img alt="@prateekeshwar" class="avatar" src="Try-Django-1.8_src_templates_registration%20at%20master%20%C2%B7%20codingforentrepreneurs_Try-Django-1.8_files/26959806.jpg" height="20" width="20">
+      <span class="dropdown-caret"></span>
+    </a>
+
+    <div class="dropdown-menu-content js-menu-content">
+      <div class="dropdown-menu dropdown-menu-sw">
+        <div class="dropdown-header header-nav-current-user css-truncate">
+          Signed in as <strong class="css-truncate-target">prateekeshwar</strong>
+        </div>
+
+        <div class="dropdown-divider"></div>
+
+        <a class="dropdown-item" href="https://github.com/prateekeshwar" data-ga-click="Header, go to profile, text:your profile">
+          Your profile
+        </a>
+        <a class="dropdown-item" href="https://github.com/prateekeshwar?tab=stars" data-ga-click="Header, go to starred repos, text:your stars">
+          Your stars
+        </a>
+        <a class="dropdown-item" href="https://github.com/explore" data-ga-click="Header, go to explore, text:explore">
+          Explore
+        </a>
+          <a class="dropdown-item" href="https://github.com/integrations" data-ga-click="Header, go to integrations, text:integrations">
+            Integrations
+          </a>
+        <a class="dropdown-item" href="https://help.github.com/" data-ga-click="Header, go to help, text:help">
+          Help
+        </a>
+
+        <div class="dropdown-divider"></div>
+
+        <a class="dropdown-item" href="https://github.com/settings/profile" data-ga-click="Header, go to settings, icon:settings">
+          Settings
+        </a>
+
+        <!-- '"` --><!-- </textarea></xmp> --><form accept-charset="UTF-8" action="/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" value="✓" type="hidden"><input name="authenticity_token" value="kZEtXnP9OX91eEsQ5xMY6DPUOFrlNizp0rjXxg8VXH1Ha2TEoFgqK2xy3ry2fFVx5doo9m/J5B0Deibv8UqipQ==" type="hidden"></div>
+          <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
+            Sign out
+          </button>
+</form>      </div>
+    </div>
+  </li>
+</ul>
+
+
+    <!-- '"` --><!-- </textarea></xmp> --><form accept-charset="UTF-8" action="/logout" class="sr-only right-0" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" value="✓" type="hidden"><input name="authenticity_token" value="fsIamg0rgbibqfB9hCXn9p6kMvWj59NCfNsLIPCUz12oOFMA3o6S7IKjZdHVSqpvSKoiWSkYG7atGfoJDssxhQ==" type="hidden"></div>
+      <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
+        Sign out
+      </button>
+</form>  </div>
+</div>
+
+
+      
+
+  </div>
+
+  <div id="start-of-content" class="accessibility-aid"></div>
+
+    <div id="js-flash-container">
+</div>
+
+
+
+  <div role="main">
+        <div itemscope="" itemtype="http://schema.org/SoftwareSourceCode">
+    <div id="js-repo-pjax-container" data-pjax-container=""><div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav">
+    <div class="container repohead-details-container">
+
+
+      <ul class="pagehead-actions">
+  <li>
+        <!-- '"` --><!-- </textarea></xmp> --><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" value="✓" type="hidden"><input name="authenticity_token" value="dXl2GQwItDrjTbsGT4XR4hL4gxzHAf7Mm/5GY26MA7xLmFVmE47f2op+uJZRFGlx85Zsc3S1eTHB+gYLPY/ndw==" type="hidden"></div>      <input class="form-control" id="repository_id" name="repository_id" value="35985915" type="hidden">
+
+        <div class="select-menu js-menu-container js-select-menu">
+          <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/subscription" class="btn btn-sm btn-with-count select-menu-button js-menu-target" role="button" tabindex="0" aria-haspopup="true" data-ga-click="Repository, click Watch settings, action:files#disambiguate">
+            <span class="js-select-button">
+              <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
+              Watch
+            </span>
+          </a>
+          <a class="social-count js-social-count" href="https://github.com/codingforentrepreneurs/Try-Django-1.8/watchers" aria-label="22 users are watching this repository">
+            22
+          </a>
+
+        <div class="select-menu-modal-holder">
+          <div class="select-menu-modal subscription-menu-modal js-menu-content">
+            <div class="select-menu-header js-navigation-enable" tabindex="-1">
+              <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"></path></svg>
+              <span class="select-menu-title">Notifications</span>
+            </div>
+
+              <div class="select-menu-list js-navigation-container" role="menu">
+
+                <div class="select-menu-item js-navigation-item selected" role="menuitem" tabindex="0">
+                  <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+                  <div class="select-menu-item-text">
+                    <input checked="checked" id="do_included" name="do" value="included" type="radio">
+                    <span class="select-menu-item-heading">Not watching</span>
+                    <span class="description">Be notified when participating or @mentioned.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
+                      Watch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+                  <div class="select-menu-item-text">
+                    <input id="do_subscribed" name="do" value="subscribed" type="radio">
+                    <span class="select-menu-item-heading">Watching</span>
+                    <span class="description">Be notified of all conversations.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
+                      Unwatch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+                  <div class="select-menu-item-text">
+                    <input id="do_ignore" name="do" value="ignore" type="radio">
+                    <span class="select-menu-item-heading">Ignoring</span>
+                    <span class="description">Never be notified.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg aria-hidden="true" class="octicon octicon-mute" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8 2.81v10.38c0 .67-.81 1-1.28.53L3 10H1c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h2l3.72-3.72C7.19 1.81 8 2.14 8 2.81zm7.53 3.22l-1.06-1.06-1.97 1.97-1.97-1.97-1.06 1.06L11.44 8 9.47 9.97l1.06 1.06 1.97-1.97 1.97 1.97 1.06-1.06L13.56 8l1.97-1.97z"></path></svg>
+                      Stop ignoring
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+</form>
+  </li>
+
+  <li>
+      <div class="js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --><form accept-charset="UTF-8" action="/codingforentrepreneurs/Try-Django-1.8/unstar" class="starred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" value="✓" type="hidden"><input name="authenticity_token" value="xYOFChaYqLHPR46M8oe8kPaHETmFCUt4D80W7JCjxdTaw4foRHXLAq405YCFNrSRDjZcoYMAG6HH5qV0bnO2BQ==" type="hidden"></div>
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Unstar codingforentrepreneurs/Try-Django-1.8" data-ga-click="Repository, click unstar button, action:files#disambiguate; text:Unstar">
+        <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
+        Unstar
+      </button>
+        <a class="social-count js-social-count" href="https://github.com/codingforentrepreneurs/Try-Django-1.8/stargazers" aria-label="136 users starred this repository">
+          136
+        </a>
+</form>
+    <!-- '"` --><!-- </textarea></xmp> --><form accept-charset="UTF-8" action="/codingforentrepreneurs/Try-Django-1.8/star" class="unstarred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" value="✓" type="hidden"><input name="authenticity_token" value="J2kaIyJ0WnDLrNYu35Oo5dt0MmGk1FiMuQOpRzgJfnk/Jj92yc29uywu3xtdI7dbfanoiUmXjDm0DLvha24lSA==" type="hidden"></div>
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Star this repository" title="Star codingforentrepreneurs/Try-Django-1.8" data-ga-click="Repository, click star button, action:files#disambiguate; text:Star">
+        <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
+        Star
+      </button>
+        <a class="social-count js-social-count" href="https://github.com/codingforentrepreneurs/Try-Django-1.8/stargazers" aria-label="136 users starred this repository">
+          136
+        </a>
+</form>  </div>
+
+  </li>
+
+  <li>
+          <!-- '"` --><!-- </textarea></xmp> --><form accept-charset="UTF-8" action="/codingforentrepreneurs/Try-Django-1.8/fork" class="btn-with-count" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" value="✓" type="hidden"><input name="authenticity_token" value="oZTagJJMED7F9/P1nt4gz37x7KEMwisMoyyipcnTcoAiFv1Tpr4WQjhE8Xl04rP9vDBV7O+wxa1N80DSILgt8Q==" type="hidden"></div>
+            <button type="submit" class="btn btn-sm btn-with-count" data-ga-click="Repository, show fork modal, action:files#disambiguate; text:Fork" title="Fork your own copy of codingforentrepreneurs/Try-Django-1.8 to your account" aria-label="Fork your own copy of codingforentrepreneurs/Try-Django-1.8 to your account">
+              <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+              Fork
+            </button>
+</form>
+    <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/network" class="social-count" aria-label="239 users forked this repository">
+      239
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+  <svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>
+  <span class="author" itemprop="author"><a href="https://github.com/codingforentrepreneurs" class="url fn" rel="author">codingforentrepreneurs</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="https://github.com/codingforentrepreneurs/Try-Django-1.8" data-pjax="#js-repo-pjax-container">Try-Django-1.8</a></strong>
+
+</h1>
+
+    </div>
+    <div class="container">
+      
+<nav class="reponav js-repo-nav js-sidenav-container-pjax" itemscope="" itemtype="http://schema.org/BreadcrumbList" role="navigation" data-pjax="#js-repo-pjax-container">
+
+  <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8" class="js-selected-navigation-item reponav-item selected" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /codingforentrepreneurs/Try-Django-1.8" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"></path></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /codingforentrepreneurs/Try-Django-1.8/issues" itemprop="url">
+        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">0</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /codingforentrepreneurs/Try-Django-1.8/pulls" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">0</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+    <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/projects" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /codingforentrepreneurs/Try-Django-1.8/projects">
+      <svg aria-hidden="true" class="octicon octicon-project" height="16" version="1.1" viewBox="0 0 15 16" width="15"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"></path></svg>
+      Projects
+      <span class="Counter">0</span>
+</a>
+    <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/wiki" class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /codingforentrepreneurs/Try-Django-1.8/wiki">
+      <svg aria-hidden="true" class="octicon octicon-book" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"></path></svg>
+      Wiki
+</a>
+
+  <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="pulse /codingforentrepreneurs/Try-Django-1.8/pulse">
+    <svg aria-hidden="true" class="octicon octicon-pulse" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0v2h3.6l.9-1.8.9 5.4L9 8.5l1.6 1.5H14V8z"></path></svg>
+    Pulse
+</a>
+  <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/graphs" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors /codingforentrepreneurs/Try-Django-1.8/graphs">
+    <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"></path></svg>
+    Graphs
+</a>
+
+</nav>
+
+    </div>
+  </div><div class="container new-discussion-timeline experiment-repo-nav">
+  <div class="repository-content">
+
+    
+      
+<div class="file-navigation">
+  
+<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
+  <button class=" btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w" type="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+      <i>Branch:</i>
+      <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax="">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"></path></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags" type="text">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open selected" href="https://github.com/codingforentrepreneurs/Try-Django-1.8/tree/master/src/templates/registration" data-name="master" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                master
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <div class="BtnGroup float-right">
+    
+  <!-- '"` --><!-- </textarea></xmp> --><form accept-charset="UTF-8" action="/codingforentrepreneurs/Try-Django-1.8/new/master/src/templates/registration" class="BtnGroup-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" value="✓" type="hidden"><input name="authenticity_token" value="DtOlH1Qc8AAQ7BZagAQvYYVfMUg0wtcSTx0liSb1XVo/NWLrXcYJToHWR5ZerQwWlODaal9aWe6XAYRaYkvwww==" type="hidden"></div>
+    <button class="btn btn-sm BtnGroup-item" type="submit" data-disable-with="Creating file…">
+      Create new file
+    </button>
+</form>
+
+      <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/upload/master/src/templates/registration" class="btn btn-sm BtnGroup-item">
+        Upload files
+      </a>
+
+    <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/find/master" data-pjax="" data-hotkey="t" class="js-pjax-capture-input btn btn-sm BtnGroup-item empty-icon">
+      Find file
+    </a>
+    <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/commits/master/src/templates/registration" class="btn btn-sm BtnGroup-item empty-icon tooltipped tooltipped-nw" aria-label="Browse commits for this branch">
+      History
+    </a>
+  </div>
+  <div class="breadcrumb"><span class="repo-root js-repo-root"><span class="js-path-segment"><a href="https://github.com/codingforentrepreneurs/Try-Django-1.8"><span>Try-Django-1.8</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/tree/master/src"><span>src</span></a></span><span class="separator">/</span><span class="js-path-segment"><a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/tree/master/src/templates"><span>templates</span></a></span><span class="separator">/</span><strong class="final-path">registration</strong><span class="separator">/</span></div>
+</div>
+
+
+
+
+  <div class="commit-tease js-details-container Details">
+    <span class="float-right">
+      Latest commit
+      <a class="commit-tease-sha" href="https://github.com/codingforentrepreneurs/Try-Django-1.8/commit/62696aa2d90725036b04e550d4056dbc86f7bbc9" data-pjax="">
+        62696aa
+      </a>
+      <span itemprop="dateModified"><relative-time datetime="2015-05-05T02:11:06Z" title="May 5, 2015, 7:41 AM GMT+5:30">on May 5, 2015</relative-time></span>
+    </span>
+
+
+    <span class="commit-author-section">
+      <img alt="@codingforentrepreneurs" class="avatar" src="Try-Django-1.8_src_templates_registration%20at%20master%20%C2%B7%20codingforentrepreneurs_Try-Django-1.8_files/8030945.png" height="20" width="20">
+      <a href="https://github.com/codingforentrepreneurs" class="user-mention" rel="author">codingforentrepreneurs</a>
+    </span>
+
+        <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/commit/62696aa2d90725036b04e550d4056dbc86f7bbc9" class="message" data-pjax="true" title="Django Registration Redux - Done">Django Registration Redux - Done</a>
+    
+
+  </div>
+
+
+
+<div class="file-wrap">
+
+  <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/tree/270f250c3a77a61aab1e18eb35d92d85044758ce/src/templates/registration" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+  <table class="files js-navigation-container js-active-navigation-container" data-pjax="">
+      <tbody><tr class="up-tree js-navigation-item">
+        <td></td>
+        <td><a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/tree/master/src/templates" class="js-navigation-open" rel="nofollow" title="Go to parent directory">..</a></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+
+    </tbody><tbody>
+      <tr class="warning include-fragment-error">
+        <td class="icon"><svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"></path></svg></td>
+        <td class="content" colspan="3">Failed to load latest commit information.</td>
+      </tr>
+
+        <tr class="js-navigation-item navigation-focus">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" src="Try-Django-1.8_src_templates_registration%20at%20master%20%C2%B7%20codingforentrepreneurs_Try-Django-1.8_files/octocat-spinner-32.gif" height="16" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/blob/master/src/templates/registration/activate.html" class="js-navigation-open" id="27f6f01b149f30c864f657eb2d1d0303-8deb01c888db91f59847d2ba511dd1be485c0e67" title="activate.html">activate.html</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/commit/0c71e7f565e0a5aeddb7c44bbb99bd90a9ad6722" class="message" data-pjax="true" title="Django Registration Redux start">Django Registration Redux start</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-05-05T01:40:32Z" title="May 5, 2015, 7:10 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" src="Try-Django-1.8_src_templates_registration%20at%20master%20%C2%B7%20codingforentrepreneurs_Try-Django-1.8_files/octocat-spinner-32.gif" height="16" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/blob/master/src/templates/registration/activation_complete.html" class="js-navigation-open" id="8cddf3b2ee287c8230192121acd2c1b7-9a85c8fa0e923936906b7af8a74732c6d2a2e641" title="activation_complete.html">activation_complete.html</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/commit/6ebe3f324a94cb7aeb3dbfd541e4ab8ef79355da" class="message" data-pjax="true" title="Django Registration [Redux]">Django Registration [Redux]</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-05-05T01:59:13Z" title="May 5, 2015, 7:29 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" src="Try-Django-1.8_src_templates_registration%20at%20master%20%C2%B7%20codingforentrepreneurs_Try-Django-1.8_files/octocat-spinner-32.gif" height="16" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/blob/master/src/templates/registration/activation_email.txt" class="js-navigation-open" id="9fecf89481af8f3a9ef4973251f8c068-3d5a1dec5158321be751eefb9eccdfe27a88a92e" title="activation_email.txt">activation_email.txt</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/commit/62696aa2d90725036b04e550d4056dbc86f7bbc9" class="message" data-pjax="true" title="Django Registration Redux - Done">Django Registration Redux - Done</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-05-05T02:11:06Z" title="May 5, 2015, 7:41 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" src="Try-Django-1.8_src_templates_registration%20at%20master%20%C2%B7%20codingforentrepreneurs_Try-Django-1.8_files/octocat-spinner-32.gif" height="16" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/blob/master/src/templates/registration/activation_email_subject.txt" class="js-navigation-open" id="15f1e0f56f695c40d8138b1c3f3c4e52-843a51121cb9db427ec7bae15d8633adf941de4b" title="activation_email_subject.txt">activation_email_subject.txt</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/commit/62696aa2d90725036b04e550d4056dbc86f7bbc9" class="message" data-pjax="true" title="Django Registration Redux - Done">Django Registration Redux - Done</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-05-05T02:11:06Z" title="May 5, 2015, 7:41 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" src="Try-Django-1.8_src_templates_registration%20at%20master%20%C2%B7%20codingforentrepreneurs_Try-Django-1.8_files/octocat-spinner-32.gif" height="16" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/blob/master/src/templates/registration/login.html" class="js-navigation-open" id="99bad02247f3eae83c76aa3fe371b715-ab83c63171ec155e2040688d25f4d08153dcebd8" title="login.html">login.html</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/commit/62696aa2d90725036b04e550d4056dbc86f7bbc9" class="message" data-pjax="true" title="Django Registration Redux - Done">Django Registration Redux - Done</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-05-05T02:11:06Z" title="May 5, 2015, 7:41 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" src="Try-Django-1.8_src_templates_registration%20at%20master%20%C2%B7%20codingforentrepreneurs_Try-Django-1.8_files/octocat-spinner-32.gif" height="16" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/blob/master/src/templates/registration/logout.html" class="js-navigation-open" id="8eefbfcba1328f1e01f425f5443917ec-717688f9e8e2deedb22f13b1e9b0d7652fa1741f" title="logout.html">logout.html</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/commit/62696aa2d90725036b04e550d4056dbc86f7bbc9" class="message" data-pjax="true" title="Django Registration Redux - Done">Django Registration Redux - Done</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-05-05T02:11:06Z" title="May 5, 2015, 7:41 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" src="Try-Django-1.8_src_templates_registration%20at%20master%20%C2%B7%20codingforentrepreneurs_Try-Django-1.8_files/octocat-spinner-32.gif" height="16" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/blob/master/src/templates/registration/password_change_done.html" class="js-navigation-open" id="276170dcc4b6ade7a0af2cb6e3e26346-659be0a46d58e114cb5c54f70cc79e208de0c999" title="password_change_done.html">password_change_done.html</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/commit/0c71e7f565e0a5aeddb7c44bbb99bd90a9ad6722" class="message" data-pjax="true" title="Django Registration Redux start">Django Registration Redux start</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-05-05T01:40:32Z" title="May 5, 2015, 7:10 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" src="Try-Django-1.8_src_templates_registration%20at%20master%20%C2%B7%20codingforentrepreneurs_Try-Django-1.8_files/octocat-spinner-32.gif" height="16" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/blob/master/src/templates/registration/password_change_form.html" class="js-navigation-open" id="6f627abb4e7b0809a794214c30450a59-10b1fc13224dd8bd60f06516bf7e3f8c00e89e81" title="password_change_form.html">password_change_form.html</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/commit/0c71e7f565e0a5aeddb7c44bbb99bd90a9ad6722" class="message" data-pjax="true" title="Django Registration Redux start">Django Registration Redux start</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-05-05T01:40:32Z" title="May 5, 2015, 7:10 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" src="Try-Django-1.8_src_templates_registration%20at%20master%20%C2%B7%20codingforentrepreneurs_Try-Django-1.8_files/octocat-spinner-32.gif" height="16" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/blob/master/src/templates/registration/password_reset_complete.html" class="js-navigation-open" id="d1151aab280d0010f473e840464f5736-55993e85346112cc7fa60121afd4140cefc813b3" title="password_reset_complete.html">password_reset_complete.html</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/commit/0c71e7f565e0a5aeddb7c44bbb99bd90a9ad6722" class="message" data-pjax="true" title="Django Registration Redux start">Django Registration Redux start</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-05-05T01:40:32Z" title="May 5, 2015, 7:10 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" src="Try-Django-1.8_src_templates_registration%20at%20master%20%C2%B7%20codingforentrepreneurs_Try-Django-1.8_files/octocat-spinner-32.gif" height="16" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/blob/master/src/templates/registration/password_reset_confirm.html" class="js-navigation-open" id="8d02372cf02eb4ff432553772e9cd694-33bd276ab3b7c25e61efa0e57ddc784ea45c1676" title="password_reset_confirm.html">password_reset_confirm.html</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/commit/0c71e7f565e0a5aeddb7c44bbb99bd90a9ad6722" class="message" data-pjax="true" title="Django Registration Redux start">Django Registration Redux start</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-05-05T01:40:32Z" title="May 5, 2015, 7:10 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" src="Try-Django-1.8_src_templates_registration%20at%20master%20%C2%B7%20codingforentrepreneurs_Try-Django-1.8_files/octocat-spinner-32.gif" height="16" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/blob/master/src/templates/registration/password_reset_done.html" class="js-navigation-open" id="f38555b0e1e98cbaf4bc206c96e78f21-907bfa01221049ac71076e56c279e1af9d23adc1" title="password_reset_done.html">password_reset_done.html</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/commit/62696aa2d90725036b04e550d4056dbc86f7bbc9" class="message" data-pjax="true" title="Django Registration Redux - Done">Django Registration Redux - Done</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-05-05T02:11:06Z" title="May 5, 2015, 7:41 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" src="Try-Django-1.8_src_templates_registration%20at%20master%20%C2%B7%20codingforentrepreneurs_Try-Django-1.8_files/octocat-spinner-32.gif" height="16" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/blob/master/src/templates/registration/password_reset_email.html" class="js-navigation-open" id="407048c832b1e7e1a7c107547539b291-c78893eda80b9bc119418b853d2ad829aeff3d0e" title="password_reset_email.html">password_reset_email.html</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/commit/0c71e7f565e0a5aeddb7c44bbb99bd90a9ad6722" class="message" data-pjax="true" title="Django Registration Redux start">Django Registration Redux start</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-05-05T01:40:32Z" title="May 5, 2015, 7:10 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" src="Try-Django-1.8_src_templates_registration%20at%20master%20%C2%B7%20codingforentrepreneurs_Try-Django-1.8_files/octocat-spinner-32.gif" height="16" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/blob/master/src/templates/registration/password_reset_form.html" class="js-navigation-open" id="4e9ded6e0c90f3f7cde36071f8dd1016-dc7a27cf9df3cf4d78f640fee7afc6581d3c6ae9" title="password_reset_form.html">password_reset_form.html</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/commit/62696aa2d90725036b04e550d4056dbc86f7bbc9" class="message" data-pjax="true" title="Django Registration Redux - Done">Django Registration Redux - Done</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-05-05T02:11:06Z" title="May 5, 2015, 7:41 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" src="Try-Django-1.8_src_templates_registration%20at%20master%20%C2%B7%20codingforentrepreneurs_Try-Django-1.8_files/octocat-spinner-32.gif" height="16" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/blob/master/src/templates/registration/registration_closed.html" class="js-navigation-open" id="40535783da865018ba50bc02c750e7fa-c73cfacc97835ffe8f53a9fc15719b77255a555a" title="registration_closed.html">registration_closed.html</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/commit/0c71e7f565e0a5aeddb7c44bbb99bd90a9ad6722" class="message" data-pjax="true" title="Django Registration Redux start">Django Registration Redux start</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-05-05T01:40:32Z" title="May 5, 2015, 7:10 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" src="Try-Django-1.8_src_templates_registration%20at%20master%20%C2%B7%20codingforentrepreneurs_Try-Django-1.8_files/octocat-spinner-32.gif" height="16" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/blob/master/src/templates/registration/registration_complete.html" class="js-navigation-open" id="be46d8ebba4b86a228545ad2ec8383f8-96a22ac471e702aa08c1bda2da341b1e4347fe8a" title="registration_complete.html">registration_complete.html</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/commit/0c71e7f565e0a5aeddb7c44bbb99bd90a9ad6722" class="message" data-pjax="true" title="Django Registration Redux start">Django Registration Redux start</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-05-05T01:40:32Z" title="May 5, 2015, 7:10 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" src="Try-Django-1.8_src_templates_registration%20at%20master%20%C2%B7%20codingforentrepreneurs_Try-Django-1.8_files/octocat-spinner-32.gif" height="16" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/blob/master/src/templates/registration/registration_form.html" class="js-navigation-open" id="0c8ab162e082b47d05e0489d57cfef4c-0a2066bb24ffa30086c25dca15eceaea7ef1651c" title="registration_form.html">registration_form.html</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/codingforentrepreneurs/Try-Django-1.8/commit/62696aa2d90725036b04e550d4056dbc86f7bbc9" class="message" data-pjax="true" title="Django Registration Redux - Done">Django Registration Redux - Done</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-05-05T02:11:06Z" title="May 5, 2015, 7:41 AM GMT+5:30">2 years ago</time-ago></span>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+
+  
+
+
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div></div>
+  </div>
+
+  </div>
+
+      <div class="container site-footer-container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links float-right">
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact GitHub</a></li>
+      <li><a href="https://developer.github.com/" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com/" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com/" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+
+    <a href="https://github.com/" aria-label="Homepage" class="site-footer-mark" title="GitHub">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+</a>
+    <ul class="site-footer-links">
+      <li>© 2017 <span title="0.11932s from github-fe-13ea3e6.cp1-iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a href="https://help.github.com/" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+  
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"></path></svg>
+    <button type="button" class="flash-close js-flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"></path></svg>
+    </button>
+    You can't perform that action at this time.
+  </div>
+
+
+    
+    <script crossorigin="anonymous" integrity="sha256-bRCeda2EcbpBUIJybADDX7kpzquXUIJJKDXxHsqMB9k=" src="Try-Django-1.8_src_templates_registration%20at%20master%20%C2%B7%20codingforentrepreneurs_Try-Django-1.8_files/frameworks-6d109e75ad8471ba415082726c00c35fb929ceab9750824928.js"></script>
+    <script async="async" crossorigin="anonymous" integrity="sha256-jzDEEiouIIctnB8nfAIXbFUtRIjPaeU3t6eFplXNFVk=" src="Try-Django-1.8_src_templates_registration%20at%20master%20%C2%B7%20codingforentrepreneurs_Try-Django-1.8_files/github-8f30c4122a2e20872d9c1f277c02176c552d4488cf69e537b7a785.js"></script>
+    
+    
+    
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"></path></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"></path></svg>
+    </button>
+  </div>
+</div>
+
+
+  
+
+
+</body></html>
